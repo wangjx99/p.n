@@ -9,4 +9,4 @@ if __name__ == '__main__':
             match = str(re.findall(r"'http://.*.nc'", line)) # 清洗并获取待下载地址
             if len(match) > 2:
                 fw.write(match[3:-3] + '\n')  # 将下载地址写入保存文件中
-    fw.close()  #  关闭文件
+    fw.close()  # 关闭文件
